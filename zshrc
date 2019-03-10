@@ -24,3 +24,5 @@ export WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
 # ZSH prompt settings
 # <return status of previous command> <current directory> <git branch>
 PROMPT='${ret_status} %{$fg[cyan]%}%d%{$reset_color%} $(git_prompt_info)'
+
+command -v fasd && eval "$(fasd --init auto)"
